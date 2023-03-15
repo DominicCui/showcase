@@ -2,7 +2,7 @@
 
 This is an academic project collection for employer. 
 
- 
+ Java and Android start from zero. C/C++ is implement features. 
 
 ### Java(GroceryStores)
 
@@ -57,16 +57,16 @@ These exercises have comments which are not cleaned up.
 **SDNFirewall**: A software-defined network with a configurable firewall using an OpenFlow-
 enabled Switch.
 
-> Please check **Submit** folder
+> Please check **Submit** folder, mainly setup ips, mini coding.
 
 **BGP Hijacking**: Explore the vulnerability of the AS systems and the BGP protocol.
 
-> Main work on bgp.py and fig2_topo.pdf
+> Main work on conf and fig2_topo.pdf, mini change on bgp.py.
 
 **BGP Measurements**: Using Python interface PyBGPStream to understand the BGP protocol
 and interact with BGP data.
 
-> Please check **submission** folder
+> Please check **submission** folder -> **gbpm.py**
 
 
 
