@@ -1,0 +1,3 @@
+[submodule "JobComparison"]
+	path = JobComparison
+	url = https://github.gatech.edu/gt-omscs-se-2021summer/6300Summer21Team064.git
