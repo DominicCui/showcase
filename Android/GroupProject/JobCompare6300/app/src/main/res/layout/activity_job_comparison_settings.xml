@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/comparisonSettings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#283593"
+    tools:context=".ComparisonSettingsActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="Edit Comparison Settings"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="80dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/salaryWeightLabel"
+                            android:layout_width="100dp"
+                            android:layout_marginRight="4dp"
+                            android:ems="10"
+                            android:text="Salary"
+                            android:textAlignment="textEnd"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/weightSalaryID"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FFFFFF"
+                            android:inputType="number"
+                            android:textColor="#FFFFFF" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/bonusWeightLabel"
+                            android:layout_width="100dp"
+                            android:layout_marginRight="4dp"
+                            android:ems="10"
+                            android:text="Bonus"
+                            android:textAlignment="textEnd"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/weightBonusID"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FFFFFF"
+                            android:inputType="number"
+                            android:textColor="#FFFFFF" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/teleworkWeightLabel"
+                            android:layout_width="120dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_height="55dp"
+                            android:ems="10"
+                            android:text="Weekly Telework Days"
+                            android:textAlignment="textEnd"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/weightTeleworkID"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FFFFFF"
+                            android:inputType="number"
+                            android:textColor="#FFFFFF" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/leaveWeightLabel"
+                            android:layout_width="100dp"
+                            android:layout_marginRight="4dp"
+                            android:ems="10"
+                            android:text="Leave Time"
+                            android:textAlignment="textEnd"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/weightLeaveID"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FFFFFF"
+                            android:inputType="number"
+                            android:textColor="#FFFFFF" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/equityWeightLabel"
+                            android:layout_width="100dp"
+                            android:layout_marginRight="4dp"
+                            android:ems="10"
+                            android:text="Equity"
+                            android:textAlignment="textEnd"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/weightEquityID"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FFFFFF"
+                            android:inputType="number"
+                            android:textColor="#FFFFFF" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center|bottom"
+                    android:layout_marginTop="80dp">
+
+                    <Button
+                        android:id="@+id/saveWeightButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:onClick="saveWeights"
+                        android:text="Save" />
+
+                    <Button
+                        android:id="@+id/cancelWeightButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:onClick="openMainMenu"
+                        android:text="Cancel" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

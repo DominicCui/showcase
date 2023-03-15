@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#283593"
+    tools:context=".JobSavedActivity">
+
+    <TextView
+        android:id="@+id/jobSavedTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Offer Saved!"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <Button
+        android:id="@+id/mainMenuButton"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#5f5fc4"
+        android:onClick="openMainMenu"
+        android:text="Main menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jobSavedTitle" />
+
+    <Button
+        android:id="@+id/enterAnotherOfferButton"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        android:backgroundTint="#5f5fc4"
+        android:onClick="openNewJobOffer"
+        android:text="Enter another job offer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jobSavedTitle" />
+
+    <Button
+        android:id="@+id/compareWithCurrentJobButton"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="276dp"
+        android:backgroundTint="#5f5fc4"
+        android:onClick="compareWithCurrentJob"
+        android:text="Compare with current job"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jobSavedTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

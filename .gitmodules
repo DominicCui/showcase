@@ -1,3 +1,6 @@
 [submodule "JobComparison"]
 	path = JobComparison
 	url = https://github.gatech.edu/gt-omscs-se-2021summer/6300Summer21Team064.git
+[submodule "GroceryStores"]
+	path = GroceryStores
+	url = https://github.gatech.edu/jcui41/CS6310-G65-A5.git

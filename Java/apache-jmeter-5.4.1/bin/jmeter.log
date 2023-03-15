@@ -1,0 +1,40 @@
+2021-12-06 18:56:23,474 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2021-12-06 18:56:23,488 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2021-12-06 18:56:23,488 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2021-12-06 18:56:23,492 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2021-12-06 18:56:23,492 INFO o.a.j.JMeter: Version 5.4.1
+2021-12-06 18:56:23,492 INFO o.a.j.JMeter: java.version=16.0.1
+2021-12-06 18:56:23,493 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2021-12-06 18:56:23,493 INFO o.a.j.JMeter: os.name=Linux
+2021-12-06 18:56:23,493 INFO o.a.j.JMeter: os.arch=amd64
+2021-12-06 18:56:23,493 INFO o.a.j.JMeter: os.version=5.11.0-41-generic
+2021-12-06 18:56:23,493 INFO o.a.j.JMeter: file.encoding=UTF-8
+2021-12-06 18:56:23,493 INFO o.a.j.JMeter: java.awt.headless=null
+2021-12-06 18:56:23,493 INFO o.a.j.JMeter: Max memory     =1073741824
+2021-12-06 18:56:23,493 INFO o.a.j.JMeter: Available Processors =12
+2021-12-06 18:56:23,500 INFO o.a.j.JMeter: Default Locale=English (EN)
+2021-12-06 18:56:23,500 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2021-12-06 18:56:23,500 INFO o.a.j.JMeter: JMeterHome=/home/dominic/Master/fall2021/Software Analysis & Design/Assignment5/G65-A5/CS6310-G65-A5/apache-jmeter-5.4.1
+2021-12-06 18:56:23,500 INFO o.a.j.JMeter: user.dir  =/home/dominic/Master/fall2021/Software Analysis & Design/Assignment5/G65-A5/CS6310-G65-A5/apache-jmeter-5.4.1/bin
+2021-12-06 18:56:23,500 INFO o.a.j.JMeter: PWD       =/home/dominic/Master/fall2021/Software Analysis & Design/Assignment5/G65-A5/CS6310-G65-A5/apache-jmeter-5.4.1/bin
+2021-12-06 18:56:23,500 INFO o.a.j.JMeter: IP: 127.0.1.1 Name: Dominic-Linux FullName: Dominic-Linux
+2021-12-06 18:56:23,703 INFO o.a.j.JMeter: Setting LAF to: laf:com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2021-12-06 18:56:23,833 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2021-12-06 18:57:20,794 INFO o.a.j.s.FileServer: Default base='/home/dominic/Master/fall2021/Software Analysis & Design/Assignment5/G65-A5/CS6310-G65-A5/apache-jmeter-5.4.1/bin'
+2021-12-06 18:57:20,797 INFO o.a.j.g.a.Load: Loading file: /home/dominic/Master/fall2021/Software Analysis & Design/Assignment5/G65-A5/CS6310-G65-A5/apache-jmeter-5.4.1/bin/F
+2021-12-06 18:57:20,797 INFO o.a.j.s.FileServer: Set new base='/home/dominic/Master/fall2021/Software Analysis & Design/Assignment5/G65-A5/CS6310-G65-A5/apache-jmeter-5.4.1/bin'
+2021-12-06 18:57:20,908 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2021-12-06 18:57:20,915 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2021-12-06 18:57:20,916 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2021-12-06 18:57:20,917 INFO o.a.j.s.SaveService: Loading file: /home/dominic/Master/fall2021/Software Analysis & Design/Assignment5/G65-A5/CS6310-G65-A5/apache-jmeter-5.4.1/bin/F
+2021-12-06 18:57:20,917 WARN o.a.j.g.a.Load: Error reading file. java.io.FileNotFoundException: /home/dominic/Master/fall2021/Software Analysis & Design/Assignment5/G65-A5/CS6310-G65-A5/apache-jmeter-5.4.1/bin/F (No such file or directory)
+2021-12-06 18:57:20,917 ERROR o.a.j.u.JMeterUtils: /home/dominic/Master/fall2021/Software Analysis & Design/Assignment5/G65-A5/CS6310-G65-A5/apache-jmeter-5.4.1/bin/F (No such file or directory)
+2021-12-06 18:57:30,700 INFO o.a.j.g.a.Load: Loading file: /home/dominic/Master/fall2021/Software Analysis & Design/Assignment5/G65-A5/CS6310-G65-A5/apache-jmeter-5.4.1/bin/JDBCRequest.jmx
+2021-12-06 18:57:30,700 INFO o.a.j.s.FileServer: Set new base='/home/dominic/Master/fall2021/Software Analysis & Design/Assignment5/G65-A5/CS6310-G65-A5/apache-jmeter-5.4.1/bin'
+2021-12-06 18:57:30,700 INFO o.a.j.s.SaveService: Loading file: /home/dominic/Master/fall2021/Software Analysis & Design/Assignment5/G65-A5/CS6310-G65-A5/apache-jmeter-5.4.1/bin/JDBCRequest.jmx
+2021-12-06 18:57:30,853 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2021-12-06 18:57:30,853 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2021-12-06 18:57:30,853 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2021-12-06 18:57:30,853 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2021-12-06 18:57:30,954 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-12-06 18:57:30,998 INFO o.a.j.s.FileServer: Set new base='/home/dominic/Master/fall2021/Software Analysis & Design/Assignment5/G65-A5/CS6310-G65-A5/apache-jmeter-5.4.1/bin'

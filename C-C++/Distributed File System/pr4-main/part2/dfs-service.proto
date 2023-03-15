@@ -1,0 +1,72 @@
+syntax = "proto3";
+
+package dfs_service;
+
+service DFSService {
+
+    // Add your service calls here
+
+    // 1. REQUIRED (Parts 1 & 2): A method to store files on the server
+
+    // 2. REQUIRED (Parts 1 & 2): A method to fetch files from the server
+
+    // 3. REQUIRED (Parts 1 & 2): A method to list all files on the server
+
+    // 4. REQUIRED (Parts 1 & 2): A method to get the status of a file on the server
+
+    // 5. REQUIRED (Part 2 only): A method to request a write lock from the server
+
+    // 6. REQUIRED (Part 2 only): A method named CallbackList to handle asynchronous file listing requests
+    //                            from a client. This method should return a listing of files along with their
+    //                            attribute information. The expected attribute information should include name,
+    //                            size, modified time, and creation time.
+
+    // 7. REQUIRED (Part 2 only): A method to delete a file from the server
+
+    // 8. Any other methods you deem necessary to complete the tasks of this assignment
+    
+    rpc StoreFile (stream FileContent) returns (Result) {}
+    rpc FetchFile (Files) returns (stream FileContent) {}
+    rpc DeleteFile (Files) returns (Result) {}
+    rpc ListAll (NoArgs) returns (stream Result) {}
+    rpc FileStats (Files) returns (stream FileStatus) {}
+   
+    rpc WriteLock(Files) returns (Result) {};
+    rpc CallbackList(Files) returns (FileList) {};
+}
+
+// Add your message types here
+
+message FileContent {
+    bytes content = 1;
+    string name = 2;
+    string clientID = 3;
+    int32 checksum = 4;
+}
+
+message FileList {
+    repeated FileStatus fstatus = 1;
+}
+
+message Result {
+    string name = 1;
+    int32 mtime = 3;
+}
+
+message Files {
+    string name = 1;
+    string clientID = 2;
+}
+
+message NoArgs {
+
+}
+
+message FileStatus {
+    string name = 1;
+    uint32 size = 2;
+    int64 ctime = 3;
+    int64 mtime = 4;
+    int32 checksum = 5;
+}
+

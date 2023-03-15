@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/jobDetails"
+    android:background="#283593"
+    tools:context=".JobDetailsActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pageTitleID"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Enter current job details"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/titleLabel"
+                    android:layout_width="40dp"
+                    android:layout_marginRight="4dp"
+                    android:ems="10"
+                    android:text="Title"
+                    android:textAlignment="textEnd"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/jobTitleID"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:inputType="text"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/companyLabel"
+                    android:layout_width="80dp"
+                    android:layout_marginRight="4dp"
+                    android:ems="10"
+                    android:text="Company"
+                    android:textAlignment="textEnd"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/jobCompanyID"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:inputType="text"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/locationLabel"
+                    android:layout_width="80dp"
+                    android:layout_marginRight="4dp"
+                    android:ems="10"
+                    android:text="Location"
+                    android:textAlignment="textEnd"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/jobLocationID"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:inputType="text"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/colLabel"
+                    android:layout_width="100dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:text="Cost of Living Index"
+                    android:textAlignment="textEnd"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/jobLivingCostID"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:inputType="number"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/salaryLabel"
+                    android:layout_width="60dp"
+                    android:layout_marginRight="4dp"
+                    android:ems="10"
+                    android:text="Salary"
+                    android:textAlignment="textEnd"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/jobYearlySalaryID"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:inputType="numberDecimal"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/bonusLabel"
+                    android:layout_width="60dp"
+                    android:layout_marginRight="4dp"
+                    android:ems="10"
+                    android:text="Bonus"
+                    android:textAlignment="textEnd"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/jobYearlyBonusID"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:inputType="numberDecimal"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/teleworkLabel"
+                    android:layout_width="118dp"
+                    android:layout_height="54dp"
+                    android:layout_marginRight="4dp"
+                    android:ems="10"
+                    android:text="Weekly Telework Days"
+                    android:textAlignment="textEnd"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/jobRemoteDaysID"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:inputType="number"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/leaveLabel"
+                    android:layout_width="92dp"
+                    android:layout_marginRight="4dp"
+                    android:ems="10"
+                    android:text="Leave Time"
+                    android:textAlignment="textEnd"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/jobLeaveDaysID"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:inputType="number"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/equityLabel"
+                    android:layout_width="60dp"
+                    android:layout_marginRight="4dp"
+                    android:ems="10"
+                    android:text="Equity"
+                    android:textAlignment="textEnd"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/jobNumberOfSharesID"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:inputType="number"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:onClick="save"
+                    android:text="Save" />
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:onClick="openMainMenu"
+                    android:text="Cancel" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
