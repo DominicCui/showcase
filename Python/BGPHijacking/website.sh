@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Copyright 2021
+# Georgia Tech
+# All rights reserved
+# Do not post or publish in any public or forbidden forums or websites
 node=${1:-h5-1}
 bold=`tput bold`
 normal=`tput sgr0`

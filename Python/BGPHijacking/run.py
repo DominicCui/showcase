@@ -1,5 +1,8 @@
 #!/usr/bin/env python
-
+# Copyright 2021
+# Georgia Tech
+# All rights reserved
+# Do not post or publish in any public or forbidden forums or websites
 from argparse import ArgumentParser
 import sys
 import os
@@ -26,14 +29,14 @@ def list_nodes(do_print=False):
     out, err = proc.communicate()
     # Mapping from name to pid.
     ret = {}
-    for line in out.split('\n'):
+    for line in out.decode("utf-8").split('\n'):
         match = node_pat.match(line)
         if not match:
             continue
         name = match.group(1)
         pid = line.split()[1]
         if do_print:
-            print "name: %6s, pid: %6s" % (name, pid)
+            print("name: %6s, pid: %6s" % (name, pid))
         ret[name] = pid
     return ret
 
@@ -50,11 +53,12 @@ def main():
     pid_by_name = list_nodes()
     pid = pid_by_name.get(FLAGS.node)
     if pid is None:
-        print "node `%s' not found" % (FLAGS.node)
+        print("node `%s' not found" % (FLAGS.node))
         sys.exit(1)
 
     cmd = ' '.join(FLAGS.cmd)
     os.system("mnexec -a %s %s" % (pid, cmd))
+
 
 if __name__ == '__main__':
     main()
