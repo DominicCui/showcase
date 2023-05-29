@@ -1,0 +1,72 @@
+## Processfile:
+  Process:
+    empty. 		[single][error]
+    processfile.	[property pro]
+     
+
+
+# Flag s:
+
+  Flag s:
+    <n/a>.		[property sn]
+    -s.		[property s]
+  S Parameters:
+    empty.		[if s][single]
+    string.		[if s]
+    
+# Flag r:
+  
+  Flag r:
+    <n/a>.		[property rn]
+    -r.		[property r]
+  R Parameters:
+    string. 		[if r][error]
+    string string.	[if r]
+
+# Flag g:
+  
+  Flag g:
+    <n/a>.
+    -g.		[if rn][error][else][property g]		
+
+# Flag i:
+  
+  Flag i:
+    <n/a>.
+    -i.		[if sn || rn][error][else][property i]	   
+   
+# Flag f:
+  
+  Flag f:
+    <n/a>.
+    -f.		[property f]		
+    
+# Flag n:
+  
+  Flag n:
+    <n/a>.
+    -n.		[property n]	
+ 
+# Flag p:
+  
+  Flag p:
+    <n/a>.
+    -p.		[property p]
+  P Peparameters:
+    string.		[if p]
+
+
+#Repeat Parameters: 
+  Reflag -r:
+    string. 		[if r][error]
+    string string.	[if r][single]
+  Reflage s:  
+    empty.		[if s][single]
+    string.		[if s][single] 
+  Reflag p:  
+    string.		[if p][single]
+   
+# File:
+  Filename:
+    empty.		[single][error][if pro][error]
+    FILE.
